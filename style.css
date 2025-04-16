@@ -146,3 +146,13 @@ summary {
 .project-table img:hover {
   transform: scale(1.05);
 }
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2dbe3;
+  text-align: center;
+  padding: 2px;
+  font-size : 15px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
