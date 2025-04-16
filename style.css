@@ -109,11 +109,12 @@ nav a:hover {
   margin: 1rem;
   padding: 1rem;
   border-radius: 10px;
+  font-size : 18px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 summary {
-  font-size: 20px;
+  font-size: 18px;
   color: black; /* 어두운 핑크색 */
 }
 
@@ -150,9 +151,9 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #f2dbe3;
+  background-color: #f5e7ec;
   text-align: center;
-  padding: 2px;
-  font-size : 15px;
+  padding: 0.5px;
+  font-size : 13px;
   box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
