@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset = "utf-8">
-        <meta name = "author" content = "LEE GAEUN">
-        <meta name = "description" content = "이 페이지는 포트폴리오 페이지입니다.">        <title> Profile of Lee GaEun </title>
-        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <meta charset = "utf-8">  <!--오류가 발생하지 않도록 문서의 문자 인코딩-->
+        <meta name = "author" content = "LEE GAEUN"> 
+        <meta name = "description" content = "이 페이지는 포트폴리오 페이지입니다."> <!--메타데이터 작성-->
+        <title> Profile of Lee GaEun </title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css"> <!--외부스타일시트 설정-->
     </head>
+
     <body>
+        <!-- 상단 헤더 영역 (페이지 제목)-->
         <header>
             <h1> 개발자 가니의 포트폴리오 </h1>
         </header>
+
+        <!-- 페이지 내 링크 연결 (네비게이션 메뉴)-->
         <nav>
             <a href = "#overview">소개</a>
             <a href = "#career">경력</a>
@@ -17,8 +22,12 @@
             <a href = "#research">연구</a>
             <a href = "#projects">프로젝트</a>
         </nav>
+
+        <!-- Contact & Channels 섹션 -->
         <section class = "overview" id = "overview">
             <img src = "./media/profile.png" alt = "프로필 이미지" class = "profile-img">
+            
+            <!-- Contact & Channels 리스트-->
             <div class = "contact">
                 <h2>Contact & Channels</h2>
                 <div class = "contact-item">
@@ -29,6 +38,7 @@
                 </div>
                 <div class = "contact-item">
                     <span class = "label">📞 phone:</span>
+                    <!-- tel 링크는 공백 없이 써야함 -->
                     <a href = "tel : +821099080304" target = "_blank">010-9908-0304</a>
                 </div>
                 <div class = "contact-item">
@@ -45,11 +55,18 @@
                 <div class = "contact-item">
                     <span class = "label">💻 Blog:</span>
                     <a href = "https://blog.naver.com/kitty_05" target="_blank">일단은가니의일상</a>
+                <div class = "contact-item">
+                    <span class = "label">웹폼:</span>
+                    <a href = "https://blog.naver.com/kitty_05" target="_blank">일단은가니의일상</a>
+                </div>
                 </div>
             </div>
         </section>
+
+        <!-- 경력사항 섹션 -->
         <section class="career" id="career">
             <h2>💼 경력사항</h2>
+            <!-- 연구 예정 항목 -->
             <details>
                 <summary>연구 예정</summary>
                 <div>
@@ -66,6 +83,7 @@
                     </ul>
                 </div>
             </details>
+            <!-- 고등학교 시절 연구 내용 -->
             <details>
                 <summary>고등학교 시절 연구</summary>
                 <div>
@@ -79,6 +97,7 @@
                     </ul>
                 </div>
             </details>
+            <!-- 수상경력 -->
             <details>
                 <summary>수상경력</summary>
                 <div>
@@ -92,7 +111,7 @@
             <br>
         </section>
         
-        
+        <!-- 학력 섹션 -->
         <section class = "education" id = "education">
             <h2>🏫 학력 </h2>
             <ul>
@@ -101,8 +120,11 @@
                 <li>광주 상일중학교 졸업 (2018.03 ~ 2021.02)</li>
             </ul>
         </section>
+
+        <!-- 연구 관심 분야 섹션 -->
         <section class = "research" id = "research">
             <h2>📚 연구 관심 분야 </h2>
+
             <details>
                 <summary>물리 기반 인공지능 모델 연구 (예정)</summary>
                 <ul>
@@ -110,6 +132,7 @@
                     <li>특히, 시뮬레이션 결과를 분석하여 물리적 해석을 돕는 AI 알고리즘을 연구할 예정입니다.</li>
                 </ul>
             </details>
+
             <details>
                 <summary>개인 맞춤형 학습을 위한 AI 튜터 시스템 개발 (예정)</summary>
                 <ul>
@@ -117,45 +140,54 @@
                     <li>스로 질문하고 학습할 수 있도록 돕는 AI 기반 학습 플랫폼 개발을 계획하고 있습니다.</li>
                 </ul>
             </details>
+
             <details>
                 <summary>AI와의 상호작용 기반 자기주도 학습 도우미 (예정)</summary>
                 <ul>
                     <li>사용자의 질문에 단순한 정답 제공을 넘어, 사고 방식, 개념 정리, 유사 문제 추천 등을 통해 깊이 있는 학습을 유도하는 AI 파트너를 구현할 예정입니다.</li>
                 </ul>
             </details>
-            <br>
+            <br> <!-- 가독성을 위해 줄 띄움 -->
         </section>
 
+        <!-- 프로젝트 섹션 -->
         <section class = "projects" id = "projects">
+
             <h2>📁 프로젝트</h2>
+
             <ol>
                 <li>
                     덕성여자대학교 맛집 소개 프로젝트
                     <br>
                     : 덕성여자대학교 주변의 맛집 정보를 담은 웹 사이트 제작
+
                     <div class = "project-table-wrapper">
                         <table class="project-table">
                                 <tr>
                                     <td>
-                                        <a href = "https://ganni0304.github.io/duksung_dinner/"
+                                        <a href = "https://ganni0304.github.io/duksung_diner/"
                                         target = "_blank">
                                             <img src = "./media/profile.png" alt = "프로젝트 1">
                                         </a>
                                     </td>
                                     <td>
-                                        <a href = "https://ganni0304.github.io/duksung_dinner/">https://github.com/ganni0304.io/duksung_dinner</a>
+                                        <a href = "https://ganni0304.github.io/duksung_diner/">https://github.com/ganni0304.io/duksung_diner</a>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    
                 </li>
             </ol>
         </section>
+
+        <!-- 꼬리말 영역 (페이지 제작자와 간단한 설명란)-->
         <footer>
             <p>제작자 : 디지털소프트웨어공학부 20240829 이가은</p>
             <p>이메일 : ganni0304@naver.com</p>
             <p>" 개인정보, 경력사항, 학력, 연구관심 분야, 프로젝트를 담은 포트폴리오 페이지입니다. " </p>
         </footer>
+
     </body>
 </html>

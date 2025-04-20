@@ -1,0 +1,4 @@
+body {
+    display: flex;  /*콘텐츠를 세로 정렬 */
+    flex-direction: column;
+    align-items: center;}
